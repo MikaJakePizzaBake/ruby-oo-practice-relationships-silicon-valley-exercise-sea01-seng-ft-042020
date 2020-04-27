@@ -1,8 +1,10 @@
 require 'pry'
 class Startup
 attr_accessor :name
-def initialize (name)
+attr_reader :founder
+def initialize (name, founder)
   @name = name
+  @founder = founder
 end
 end
 
